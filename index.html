@@ -9,17 +9,47 @@
 <body>
 
     <header>
-        <h1>😂 Galería de Memes 😂</h1>
-        <button id="modoToggle">🌙 Modo Oscuro</button>
+        <h1>Galería de Memes</h1>
+        <button id="modoToggle">Modo Oscuro</button>
     </header>
 
-    <div class="gallery">
-        <img src="memes/meme1.jpg" alt="Meme 1">
-        <img src="memes/meme2.jpg" alt="Meme 2">
-        <img src="memes/meme3.jpg" alt="Meme 3">
-        <img src="memes/meme4.jpg" alt="Meme 4">
-        <img src="memes/meme5.jpg" alt="Meme 5">
-        <img src="memes/meme6.jpg" alt="Meme 6">
+    <div class="mainCont">
+        <h2>Sobre la página</h2>
+        <p>Esta página está hecha para poder enseñarle a la gente varios memes.</p>
+    </div>
+
+    <!-- Controles de las pestañas -->
+    <div class="tabs">
+        <button onclick="mostrarTab(0)">Memes Clásicos</button>
+        <button onclick="mostrarTab(1)">Memes Modernos</button>
+        <button onclick="mostrarTab(2)">Memes Random</button>
+    </div>
+
+    <!-- Contenedores de las pestañas, esta madre esta perra, no sabia que se podia -->
+    <div class="tab-content">
+        <div class="tab">
+            <h2>Memes Clásicos</h2>
+            <div class="gallery">
+                <img src="memes/meme1.jpg" alt="Meme 1">
+                <img src="memes/meme2.jpg" alt="Meme 2">
+            </div>
+        </div>
+
+        <div class="tab">
+            <h2>Memes Modernos</h2>
+            <div class="gallery">
+                <img src="memes/meme3.jpg" alt="Meme 3">
+                <img src="memes/meme4.jpg" alt="Meme 4">
+            </div>
+        </div>
+
+        <div class="tab">
+            <h2>Memes Random</h2>
+            <div class="gallery">
+                <img src="memes/meme5.jpg" alt="Meme 5">
+                <img src="memes/meme6.jpg" alt="Meme 6">
+            </div>
+        </div>
     </div>
 
     <script src="Script.js"></script>
