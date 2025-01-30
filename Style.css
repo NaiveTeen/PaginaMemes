@@ -57,3 +57,11 @@ button:hover {
 .dark-mode header {
     background-color: #333;
 }
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
